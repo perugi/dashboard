@@ -1,0 +1,25 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 15rem 1fr;
+    grid-template-areas:
+        "sidebar header "
+        "sidebar content"
+
+}
+
+.sidebar {
+    background: #1992d4;
+    grid-area: sidebar
+}
+
+.header {
+    background: #ffffff;
+    grid-area: header
+}
+
+.content {
+    background: #e2e8f0;
+    grid-area: content
+}
