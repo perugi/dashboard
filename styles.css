@@ -11,8 +11,13 @@
 
 .sidebar {
     background: #1992d4;
-    grid-area: sidebar
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 4rem;
 }
+
+.sidebar>a {}
 
 .header {
     background: #ffffff;
