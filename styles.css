@@ -8,7 +8,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 20rem 1fr;
-    grid-template-rows: 15rem 1fr;
+    grid-template-rows: 12rem 1fr;
     grid-template-areas:
         "sidebar header "
         "sidebar content"
@@ -52,16 +52,6 @@ body {
     align-items: center;
 }
 
-.header {
-    background: #ffffff;
-    grid-area: header
-}
-
-.content {
-    background: #e2e8f0;
-    grid-area: content
-}
-
 .filter-white {
     /* Change a black svg to white. */
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(216deg) brightness(105%) contrast(101%);
@@ -75,4 +65,30 @@ body {
 .small-icon {
     height: 1.5rem;
     justify-self: center;
+}
+
+.header {
+    background: #ffffff;
+    grid-area: header;
+    display: grid;
+    padding: 0.5rem 3rem;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 4rem 1fr 4rem 4rem 8rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 8rem 1fr 6rem 6rem 6rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.content {
+    background: #e2e8f0;
+    grid-area: content
 }
