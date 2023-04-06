@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+:root {
+    --background-color: #e2e8f0;
+}
+
 body {
     font-family: 'Roboto', monospace;
 }
@@ -76,9 +80,29 @@ body {
 
 .header-top {
     display: grid;
-    grid-template-columns: 4rem 1fr 4rem 4rem 8rem;
+    grid-template-columns: auto 1fr auto auto auto;
     gap: 1.5rem;
     align-items: center;
+}
+
+.search-icon {
+    margin-right: -15px;
+}
+
+#search {
+    width: min(35vw, 40rem);
+    justify-self: left;
+    background-color: var(--background-color);
+    border: none;
+    height: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+#search:focus {
+    outline: none;
+    background-color: #d1d8e2;
 }
 
 .header-bottom {
@@ -88,7 +112,8 @@ body {
     align-items: center;
 }
 
+
 .content {
-    background: #e2e8f0;
+    background: var(--background-color);
     grid-area: content
 }
