@@ -2,6 +2,7 @@
 
 :root {
     --background-color: #e2e8f0;
+    --accent-color: #1992d4;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 
 .sidebar {
     padding-top: 0.5rem;
-    background: #1992d4;
+    background: var(--accent-color);
     grid-area: sidebar;
     display: grid;
     grid-template-columns: 1fr;
@@ -101,17 +102,56 @@ body {
 }
 
 #search:focus {
-    outline: none;
     background-color: #d1d8e2;
+}
+
+label[for="search"]:hover {
+    cursor: pointer;
+}
+
+.profile-large {
+    height: 75px;
+}
+
+.profile-small {
+    height: 50px;
+}
+
+.profile-info {
+    font-weight: 500;
+}
+
+.profile-info.salutation {
+    margin-bottom: 0.5rem;
+}
+
+.profile-info.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: #1380bb;
+    cursor: pointer;
 }
 
 .header-bottom {
     display: grid;
-    grid-template-columns: 8rem 1fr 6rem 6rem 6rem;
+    grid-template-columns: auto 1fr auto auto auto;
     gap: 1.5rem;
     align-items: center;
 }
-
 
 .content {
     background: var(--background-color);
