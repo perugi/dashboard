@@ -157,3 +157,7 @@ button:hover {
     background: var(--background-color);
     grid-area: content
 }
+
+.project-icon {
+    height: 25px;
+}
